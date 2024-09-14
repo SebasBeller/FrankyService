@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/greet")
 public class GreetingController {
+
     @Autowired
     GreetingService greetingService;
 
