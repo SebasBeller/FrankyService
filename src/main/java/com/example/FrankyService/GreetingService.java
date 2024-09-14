@@ -12,7 +12,7 @@ public class GreetingService {
     ConfigurationParam configurationParam;
 
     private String translate(String text,String languageToTranslate) throws DeepLException, InterruptedException {
-        String authKey = "70b0f821-14f2-46f9-9c44-a15a620c2085:fx";
+        String authKey = configurationParam.getAuthKey();
         Translator translator = new Translator(authKey);
         TextResult result =
                 translator.translateText(text, null, languageToTranslate);

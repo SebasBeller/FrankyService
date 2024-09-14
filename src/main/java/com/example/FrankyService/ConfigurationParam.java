@@ -19,4 +19,10 @@ public class ConfigurationParam {
         return greet;
     }
 
+    @Value("${authKey}")
+    String authKey;
+    public String getAuthKey() {
+        return authKey;
+    }
+
 }

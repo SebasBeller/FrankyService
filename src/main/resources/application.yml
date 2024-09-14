@@ -7,3 +7,5 @@ server:
 greet:
   "Pregúntate si lo que estás haciendo hoy te acerca al lugar en el que quieres estar mañana."
 dollarOfficial: 6.96
+authKey:
+    "70b0f821-14f2-46f9-9c44-a15a620c2085:fx"
