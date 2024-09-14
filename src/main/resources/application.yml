@@ -4,5 +4,6 @@ spring:
 server:
   port: 9090
 
-
+greet:
+  "Pregúntate si lo que estás haciendo hoy te acerca al lugar en el que quieres estar mañana."
 dollarOfficial: 6.96

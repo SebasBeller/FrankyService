@@ -6,10 +6,17 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ConfigurationParam {
+
     @Value("${dollarOfficial}")// importamos una var de entorno
     double officialDollar;
     public double getOfficialDollar() {
         return officialDollar;
+    }
+
+    @Value("${greet}")
+    String greet;
+    public String getGreet() {
+        return greet;
     }
 
 }
