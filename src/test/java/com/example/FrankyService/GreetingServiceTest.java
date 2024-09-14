@@ -27,4 +27,12 @@ class GreetingServiceTest {
                 "Pregúntate si lo que estás haciendo hoy te acerca al lugar en el que quieres estar mañana."
                 , greetingService.getGreeting());
     }
+
+    @Test
+    void getGreetingFor() {
+        when(configurationParam.getGreet()).thenReturn("Pregúntate si lo que estás haciendo hoy te acerca al lugar en el que quieres estar mañana.");
+        assertEquals(
+                "Sebastian. Pregúntate si lo que estás haciendo hoy te acerca al lugar en el que quieres estar mañana."
+                , greetingService.getGreetingFor("Sebastian"));
+    }
 }
