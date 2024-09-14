@@ -12,4 +12,8 @@ public class GreetingService {
         return configurationParam.getGreet();
     }
 
+    public String getGreetingFor(String name) {
+        return name+". "+getGreeting();
+    }
+
 }
