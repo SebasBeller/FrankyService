@@ -13,8 +13,9 @@ public class GreetingController {
     GreetingService greetingService;
 
     @GetMapping("/get")
-    public String getGreet() {
-        return greetingService.getGreeting();
+    public ResponseEntity<GreetingResponseDto> getGreet() {
+        GreetingResponseDto response=new GreetingResponseDto( greetingService.getGreeting());
+        return ResponseEntity.ok(response);
     }
 
     @PostMapping("/greeting-for-employee")
