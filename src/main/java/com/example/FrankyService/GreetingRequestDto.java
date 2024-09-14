@@ -1,4 +1,4 @@
 package com.example.FrankyService;
 
-public record GreetingRequestDto(String name) {
+public record GreetingRequestDto(String name,String language) {
 }
