@@ -19,7 +19,7 @@ class WorkFlowServiceTest {
     void create() {
         WorkFlowService workFlowService = new WorkFlowService();
         List<WorkFlow> workFlows = workFlowService.obtainList();
-        workFlowService.create(new WorkFlow("nose","..."));
+        workFlowService.create(new WorkFlow("nose", "..."));
         assertEquals(workFlows.size(), 1);
 
     }
@@ -27,8 +27,8 @@ class WorkFlowServiceTest {
     @Test
     void delete() {
         WorkFlowService workFlowService = new WorkFlowService();
-        workFlowService.create(new WorkFlow("nose","..."));
-        boolean resp=workFlowService.delete("nose");
-        assertEquals(true, resp );
+        workFlowService.create(new WorkFlow("nose", "..."));
+        boolean resp = workFlowService.delete("nose");
+        assertEquals(true, resp);
     }
 }
