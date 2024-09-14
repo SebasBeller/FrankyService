@@ -1,9 +1,8 @@
 package com.example.FrankyService;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/greet")
@@ -13,8 +12,18 @@ public class GreetingController {
     GreetingService greetingService;
 
     @GetMapping("/get")
-    String getGreet() {
+    public String getGreet() {
         return greetingService.getGreeting();
     }
 
+    @PostMapping("/greeting-for-employee")
+    public ResponseEntity<GreetingResponseDto> greetingForEmployee(
+            @RequestBody  GreetingRequestDto greetingRequestDto
+    ) {
+        GreetingResponseDto reponse=new GreetingResponseDto(
+                greetingService.getGreetingFor(
+                        greetingRequestDto.name())
+        );
+        return ResponseEntity.ok(reponse);
+    }
 }

@@ -34,7 +34,6 @@ public class ConverterController{
                 ),
                 "Fahrenheit"
         );
-//        System.out.println(converterRequestDto.value());
         return ResponseEntity.ok(response);// pasamos a la entidad la resp que recibimos
 
     }
