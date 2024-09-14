@@ -2,8 +2,7 @@
 
 # API de Saludos para Empleados
 
-Este proyecto es una API desarrollada en Java que permite realizar saludos personalizados a empleados y ofrece la funcionalidad adicional de traducir estos saludos a diferentes idiomas. La API está diseñada para ser fácilmente integrable en cualquier aplicación o sistema que requiera enviar mensajes de bienvenida, despedida o cualquier otro tipo de saludo a empleados, con soporte para traducciones.
-
+Este proyecto es una API desarrollada en Java que permite realizar saludos personalizados a empleados y ofrece la funcionalidad adicional de traducir estos saludos a diferentes idiomas. 
 ## Características
 
 - **Saludo personalizado a empleados**: Permite generar mensajes de saludo dirigidos específicamente a empleados.
